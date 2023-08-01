@@ -1,0 +1,8 @@
+location /kodi/TV.m3u {
+        alias /media/KodiConfig/TV.m3u;
+}
+
+location /kodi/epg.xml {
+        proxy_pass http://epg.51zmt.top:8000/e.xml;
+        proxy_set_header Host epg.51zmt.top;
+}
