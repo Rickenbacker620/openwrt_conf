@@ -1,5 +1,5 @@
 location /kodi/TV.m3u {
-        alias /media/KodiConfig/TV.m3u;
+        alias /etc/TV.m3u;
 }
 
 location /kodi/epg.xml {
