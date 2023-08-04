@@ -1,6 +1,0 @@
-location /clash/ {
-        proxy_pass http://127.0.0.1:9090/;
-        proxy_set_header Host $proxy_host;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "Upgrade";
-}
