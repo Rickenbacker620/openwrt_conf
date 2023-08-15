@@ -1,4 +1,4 @@
-COMPONENTS := r2s mini docker
+COMPONENTS := r2s mini extra docker
 
 diffconfig: $(addprefix diffconfig., $(COMPONENTS))
 	@cat $^ > ../.config

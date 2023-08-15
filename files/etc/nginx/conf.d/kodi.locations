@@ -3,6 +3,7 @@ location /kodi/TV.m3u {
 }
 
 location /kodi/epg.xml {
+        resolver 127.0.0.11 valid=30s;
         proxy_pass http://epg.51zmt.top:8000/e.xml;
         proxy_set_header Host epg.51zmt.top;
 }
